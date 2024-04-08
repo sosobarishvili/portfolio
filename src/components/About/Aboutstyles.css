@@ -1,0 +1,43 @@
+.about-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(11, 10, 19);
+  min-height: 100vh;
+}
+
+.about-container .about-left-side-image {
+  width: 60%;
+  overflow: hidden;
+}
+
+.about-container .about-left-side-image .about-react-image {
+  height: 100vh;
+}
+
+.about-me-right-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+
+@media (max-width: 1021px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-container .about-left-side-image {
+    width: 100%;
+  }
+
+  .about-me-right-side {
+    min-width: 80%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}

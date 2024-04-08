@@ -1,0 +1,127 @@
+.contact-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgb(23, 23, 23);
+  padding: 50px 15px;
+}
+
+.contact-left-side {
+  width: 50%;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-left-side h1 {
+  color: #bdb4b4;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(214, 128, 22);
+}
+
+.contact-left-side h4 {
+  color: rgb(81, 81, 81);
+}
+
+.contact-left-side a {
+  color: #FFF;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(214, 128, 22);
+  text-decoration: none;
+}
+
+.contact-right-side {
+  width: 50%;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+
+.contact-right-side form {
+  max-width: 100%;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  height: 100vh;
+}
+
+.contact-right-side form label {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 0;
+  padding-bottom: 0;
+}
+
+.contact-right-side form input,
+.contact-right-side form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #241f1f;
+  outline: none;
+  background-color: rgb(16, 15, 21);
+  color: #635d5d;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-right-side form textarea {
+  resize: vertical;
+}
+
+.contact-right-side form input:focus,
+.contact-right-side form textarea:focus {
+  border-color: 2px solid #007bff;
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.5)
+}
+
+
+button {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #03045e;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  cursor: pointer;
+}
+
+button::before,
+button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+button::before {
+  left: -10px;
+  background: #240046;
+}
+
+button::after {
+  right: -10px;
+  background: #5a189a;
+}
+
+button:hover::before,
+button:hover::after {
+  width: 58%;
+}
+
+button:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+}
+
+button span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}

@@ -1,0 +1,35 @@
+.first-background-image {
+  width: 100%;
+  position: relative;
+  top: 0;
+  z-index: 0;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+.first-image-texts {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.first-background-page-topic {
+  font-size: 4vw;
+}
+
+.first-background-page-text {
+  font-size: 3vw;
+}
+
+@media (max-width: 750px) {
+  .first-image-texts {
+    width: 80%;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+  }
+}
